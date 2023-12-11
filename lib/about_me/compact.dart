@@ -71,49 +71,35 @@ I'm a self-taught full-stack developer who has experience in a broad range of ar
                       color: hovered == 'roblox'
                           ? Theme.of(context).hoverColor
                           : Theme.of(context).primaryColor,
-                      child: Padding(
-                        padding: const EdgeInsets.all(12),
-                        child: Container(
-                          clipBehavior: Clip.hardEdge,
-                          decoration:
-                              const BoxDecoration(shape: BoxShape.rectangle),
-                          child: Stack(
-                            alignment: AlignmentDirectional.topCenter,
-                            children: <Widget>[
-                              Column(
-                                children: <Widget>[
-                                  Text(
-                                    'Roblox',
-                                    style:
-                                        Theme.of(context).textTheme.bodyLarge,
-                                    textAlign: TextAlign.center,
-                                  ),
-                                  const Padding(
-                                      padding: EdgeInsets.only(top: 8)),
-                                  const FittedBox(
-                                    child: CircleAvatar(
-                                      radius: 50, // Image radius
-                                      backgroundImage: NetworkImage(
-                                        'https://tr.rbxcdn.com/30DAY-AvatarHeadshot-84C8FCE4833331E7BD35BB06267BC97B-Png/100/100/AvatarHeadshot/Png/isCircular',
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Positioned.fill(
-                                child: AnimatedOpacity(
-                                  opacity: hovered == 'roblox' ? 1 : 0,
-                                  duration: const Duration(milliseconds: 250),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(12),
-                                    child: Image.asset(
-                                      'assets/ant_colonies.png',
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrlString(
+                              'https://www.roblox.com/users/538205352/profile');
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Container(
+                            clipBehavior: Clip.hardEdge,
+                            decoration:
+                                const BoxDecoration(shape: BoxShape.rectangle),
+                            child: Column(
+                              children: <Widget>[
+                                Text(
+                                  'Roblox',
+                                  style:
+                                      Theme.of(context).textTheme.bodyLarge,
+                                  textAlign: TextAlign.center,
                                 ),
-                              ),
-                            ],
+                                const Padding(
+                                    padding: EdgeInsets.only(top: 8)),
+                                const CircleAvatar(
+                                  backgroundImage: NetworkImage(
+                                    'https://tr.rbxcdn.com/30DAY-AvatarHeadshot-84C8FCE4833331E7BD35BB06267BC97B-Png/100/100/AvatarHeadshot/Png/isCircular',
+                                  ),
+                                  maxRadius: 50,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
