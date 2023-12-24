@@ -12,6 +12,7 @@ class TimelinePageState extends State<TimelinePageCompact> {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         const Padding(padding: EdgeInsets.only(top: 16)),
         Text(

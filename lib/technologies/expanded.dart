@@ -12,6 +12,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         const Padding(padding: EdgeInsets.only(top: 16)),
         Text(
@@ -37,6 +38,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Text(
                         'Weld Service',
@@ -75,6 +77,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Text(
                         'Time Scale Framework',
@@ -150,6 +153,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Text(
                         'Custom Mouse',
@@ -213,6 +217,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                       minHeight: 200,
                     ),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         Text(
                           'Hybrid Terrain',
@@ -245,6 +250,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                       minHeight: 200,
                     ),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         Text(
                           'Live Updates',
@@ -277,6 +283,7 @@ class TechnologiesPageState extends State<TechnologiesPageExpanded> {
                       minHeight: 200,
                     ),
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         Text(
                           'Building Ecosystem',

@@ -43,6 +43,7 @@ class SplashScreenPageState extends State<SplashScreenPage> {
           ),
         ),
         Column(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             const CircleAvatar(
               radius: 64, // Image radius
