@@ -19,9 +19,14 @@ class TimelinePageState extends State<TimelinePage> {
       key: widget.pageKey,
       padding: EdgeInsets.symmetric(
           horizontal: MediaQuery.of(context).size.width < 600 ? 16 : 24),
-      child: MediaQuery.of(context).size.width < 600
-          ? const TimelinePageCompact()
-          : const TimelinePageExpanded(),
+      child: ConstrainedBox(
+        constraints: BoxConstraints(
+          minHeight: MediaQuery.of(context).size.height,
+        ),
+        child: MediaQuery.of(context).size.width < 600
+            ? const TimelinePageCompact()
+            : const TimelinePageExpanded(),
+      ),
     );
   }
 }

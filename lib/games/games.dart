@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import 'compact.dart';
 import 'expanded.dart';
 
-class TechnologiesPage extends StatefulWidget {
-  const TechnologiesPage({super.key, this.pageKey});
+class GamesPage extends StatefulWidget {
+  const GamesPage({super.key, this.pageKey});
 
   final GlobalKey? pageKey;
 
   @override
-  State<TechnologiesPage> createState() => TechnologiesPageState();
+  State<GamesPage> createState() => GamesPageState();
 }
 
-class TechnologiesPageState extends State<TechnologiesPage> {
+class GamesPageState extends State<GamesPage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,9 +24,9 @@ class TechnologiesPageState extends State<TechnologiesPage> {
           minHeight: MediaQuery.of(context).size.height,
         ),
         child: MediaQuery.of(context).size.width < 600
-            ? const TechnologiesPageCompact()
-            : const TechnologiesPageExpanded(),
-      ),
+            ? const GamesPageCompact()
+            : const GamesPageExpanded(),
+        ),
     );
   }
 }

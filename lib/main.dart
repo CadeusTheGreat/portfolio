@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 import 'splash_screen.dart';
 import 'about_me/about_me.dart';
+import 'games/games.dart';
 import 'technologies/technologies.dart';
 import 'timeline/timeline.dart';
 import 'more.dart';
@@ -49,6 +50,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final GlobalKey splashScreenKey = GlobalKey();
   final GlobalKey aboutMeKey = GlobalKey();
+  final GlobalKey gamesKey = GlobalKey();
   final GlobalKey technologiesKey = GlobalKey();
   final GlobalKey timelineKey = GlobalKey();
   final GlobalKey morePageKey = GlobalKey();
@@ -72,6 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             AboutMePage(
               pageKey: aboutMeKey,
+            ),
+            GamesPage(
+              pageKey: gamesKey,
             ),
             TechnologiesPage(
               pageKey: technologiesKey,
