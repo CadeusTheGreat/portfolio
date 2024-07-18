@@ -84,6 +84,11 @@ class _MyHomePageState extends State<MyHomePage> {
             TimelinePage(
               pageKey: timelineKey,
             ),
+            /*
+            MorePage(
+              pageKey: morePageKey,
+            ),
+            */
           ],
         ),
       ),
