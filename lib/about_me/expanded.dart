@@ -67,7 +67,7 @@ class AboutMePageState extends State<AboutMePageExpanded> {
                     child: Text(
                       '''Welcome!
 
-I'm Fractware, a 22 year old programmer from the UK. I have 10+ years of experience on the Roblox platform as well as 2 years of Flutter experience.
+I'm Fractware, a 23 year old programmer from the UK. I have 10+ years of experience on the Roblox platform as well as 2 years of Flutter experience.
 
 On GitHub I am an active contributor to the open source Roblox creator documentation.
 
